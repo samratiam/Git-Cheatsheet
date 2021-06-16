@@ -1,0 +1,78 @@
+git init //to put status in git
+ls -a //hidden file
+git status //any change that hasn't put in history
+git config 
+git config --global user.name "Samrat Pudasaini"
+git config --global user.email "pudasaini.samrat@gmail.com"
+git add . //to put all history changes in current folder . //bring it in stage
+git commit -m "samrat.txt file added" //Save changes with message //commits are changes //click photo
+git log  //to see the changes
+
+touch second.txt
+git add second.txt
+git status
+
+//Note: For each new pull request create new branch
+git branch fix35 //create new branch
+git checkout fix35 //go to branch fix35
+git commit  //make changes to branch fix35
+git checkout master  //go to master branch
+git commit  //make changes to master branch
+git merge fix35  //merge branch fix35 to master branch
+
+//Note: Fork to copy to the file to own account not downloads other repository directly
+
+git clone https://github.com/SamratPudasaini/GCA_Django.git
+git remote -v    //To check origin of the folder which is my folder not original project folder
+git remote add upstream https://github.com/SamratPudasaini/GCA_Django.git
+git remote -v //Upstream means the folder from which it is forked
+git pull upstream master  //to fetch the changes from original project
+
+git reset commit_id
+
+
+git branch temp
+checkout temp
+git add .
+git status
+git commit -m "new file added"
+git log
+git push origin temp
+
+git add.
+git stash //To put file in a temporary folder
+git stash pop //to bring back that file
+git stash clear //to delete that file change
+
+git remote -v //see the urls of origin and fork
+git push origin temp -f //force push temp branch after changes
+
+q to quit from the process
+
+--ITSNP---
+git init ==> start
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+git add  .-->Staging area,add all the changes
+git commit -->Repository
+git status -->to check status
+git status -s -->to show status in short 
+git config --global user.email "pudasiaini.smart"
+git config --global user.username "Samrat"
+git reset --hard --> go to last commit 
+git remote add origin "repositoryname.git"-->to connect to remote repository
+git push origin master-->push the local changes to github
+git clone "repository-link"-->to download the repository files
+git log -->to show history by user
+git log --oneline -->log in one line
+git checkout "version-sha-key"-->to go to the specific commit
+git checkout master-->go to master branch
+git diff --> to show differences
+git branch branch-name -->to create branch
+git branch --> show all the branches
+git branch -d (D for force delete) branch-name-->to delete branch
+git merge branch-name --> merge branch to the current branch
+.gitignore--->Create .gitignore file and include all the filenames to ignore'
+git push origin branch-name-->To create a pull request in github
+git pull origin branch-name-->pull branch to origin before this checkout to master
+git push -u origin master-->master is the branch name of local
