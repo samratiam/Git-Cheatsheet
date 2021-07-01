@@ -62,6 +62,7 @@ git config --global user.username "Samrat"
 git reset --hard --> go to last commit 
 git remote add origin "repositoryname.git"-->to connect to remote repository
 git push origin master-->push the local changes to github
+git push -u origin master--
 git clone "repository-link"-->to download the repository files
 git log -->to show history by user
 git log --oneline -->log in one line
@@ -71,8 +72,12 @@ git diff --> to show differences
 git branch branch-name -->to create branch
 git branch --> show all the branches
 git branch -d (D for force delete) branch-name-->to delete branch
+git branch -a -->to view all branches
+git checkout  -b branch_name -->creates a new branch and goes to that branch as well
 git merge branch-name --> merge branch to the current branch
 .gitignore--->Create .gitignore file and include all the filenames to ignore'
 git push origin branch-name-->To create a pull request in github
 git pull origin branch-name-->pull branch to origin before this checkout to master
 git push -u origin master-->master is the branch name of local
+git pull <alias_name> <branch_name>--Fetch Changed Code from Remote Repository to Local Repisotory
+
