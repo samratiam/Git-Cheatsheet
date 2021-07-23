@@ -8,6 +8,7 @@ git add . //to put all history changes in current folder . //bring it in stage
 git commit -m "samrat.txt file added" //Save changes with message //commits are changes //click photo
 git log  //to see the changes
 git commit -am "Message" //add all the changes and commit
+git reset --hard origin/master //to go back to the version in github
 
 touch second.txt
 git add second.txt
