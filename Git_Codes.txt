@@ -61,6 +61,7 @@ git status -->to check status
 git status -s -->to show status in short 
 git config --global user.email "pudasiaini.smart"
 git config --global user.username "Samrat"
+git remote set-url origin https://github.com/samratiam/React-Django.git
 git reset --hard --> go to last commit 
 git remote add origin "repositoryname.git"-->to connect to remote repository
 git push origin master-->push the local changes to github
